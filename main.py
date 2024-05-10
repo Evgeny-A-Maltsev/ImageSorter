@@ -1,14 +1,14 @@
 import click
 
 
-@click.command()
-@click.option('-s', '--source', help='Photo source directory')
-@click.option('-d', '--destination', help='Photo destination directory')
-@click.option('-r', '--recursive', is_flag=True, default=True, help='Recursively photo search')
-@click.option('-m', '--move', is_flag=True, default=True, help='Move sorted photos')
-def image_sort(source, destination, recursive, move):
+@click.command("cli", context_settings={'show_default': True})
+@click.argument('source', required=True)
+@click.argument('targetr', required=True)
+@click.option('-r', '--recursive', is_flag=True, default=False, help='Recursively photo search')
+@click.option('-m', '--move', is_flag=True, default=False, help='Move sorted photos')
+def image_sort(source, target, recursive, move):
     click.echo(f"Photo source directory = {source}")
-    click.echo(f"Photo destination directory = {destination}")
+    click.echo(f"Photo destination directory = {target}")
     click.echo(f"Recursively photo search = {recursive}")
     click.echo(f"Move sorted photos = {move}")
 
