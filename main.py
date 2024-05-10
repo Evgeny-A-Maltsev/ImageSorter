@@ -1,3 +1,4 @@
+import pathlib
 import click
 
 
@@ -7,10 +8,17 @@ import click
 @click.option('-r', '--recursive', is_flag=True, default=False, help='Recursively photo search')
 @click.option('-m', '--move', is_flag=True, default=False, help='Move sorted photos')
 def image_sort(source_directory, destination_directory, recursive, move):
-    click.echo(f"Photo source directory = {source_directory}")
-    click.echo(f"Photo destination directory = {destination_directory}")
-    click.echo(f"Recursively photo search = {recursive}")
-    click.echo(f"Move sorted photos = {move}")
+    images = image_search(source_directory, recursive)
+    for files in images:
+        print(files, pathlib.PurePosixPath(files).parent, pathlib.PurePosixPath(files).name)
+
+
+def image_search(source_directory, recursive):
+    if recursive:
+        images = list(pathlib.Path(source_directory).rglob("*.jpg", case_sensitive=False))
+    else:
+        images = list(pathlib.Path(source_directory).glob("*.jpg", case_sensitive=False))
+    return list(images)
 
 
 if __name__ == '__main__':
