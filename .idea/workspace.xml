@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Small changes in the code">
+    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="A change in the logic of click operation, the selection of arguments and options has been made">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,9 @@
     &quot;accountId&quot;: &quot;0159f048-2bea-4bc8-aa86-116c5cf03d4d&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -84,6 +86,19 @@
       <option name="presentableId" value="Default" />
       <updated>1714840965826</updated>
     </task>
+    <task id="LOCAL-00001" summary="A change in the logic of click operation, the selection of arguments and options has been made">
+      <option name="closed" value="true" />
+      <created>1715328044779</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715328044779</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="A change in the logic of click operation, the selection of arguments and options has been made" />
+    <option name="LAST_COMMIT_MESSAGE" value="A change in the logic of click operation, the selection of arguments and options has been made" />
   </component>
 </project>
