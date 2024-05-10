@@ -26,8 +26,8 @@ def get_datetime_original(file):
     datetime_original = 'n/a'
     try:
         with open(file, 'rb') as image_file:
-            my_image = exif.Image(image_file)
-            datetime_original = my_image.datetime_original
+            image = exif.Image(image_file)
+            datetime_original = image.datetime_original
     except KeyError:
         pass
     finally:
