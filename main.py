@@ -34,17 +34,13 @@ def get_datetime_original(file):
     datetime_original = 'n/a'
     exif = Image.open(file)._getexif()
     if exif:
-        try:
+        if 36867 in exif:
             datetime_original = exif[36867]
-        except KeyError:
-            pass
     return datetime_original
 
 
 def get_date(datetime_original):
-    match = search("\\d{4}:\\d{2}:\\d{2}", datetime_original)
-    date = datetime.strptime(match.group(), '%Y:%m:%d').date()
-    return date
+    return datetime.strptime(search("\\d{4}:\\d{2}:\\d{2}", datetime_original).group(), '%Y:%m:%d').date()
 
 
 if __name__ == '__main__':
