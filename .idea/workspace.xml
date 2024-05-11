@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Fixed the warning in the get_date function &quot;syntaxWarning: invalid escape sequence '\d'&quot;">
+    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="The get_datetime_original function has been optimized">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -69,7 +69,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="-r -m $USER_HOME$/Yandex.Disk/Фотокамера $USER_HOME$/sort_photo" />
+      <option name="PARAMETERS" value="-r $USER_HOME$/Yandex.Disk/Фотокамера $USER_HOME$/Изображения/sorted_photos" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -150,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715427116653</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="The get_datetime_original function has been optimized">
+      <option name="closed" value="true" />
+      <created>1715429436759</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715429436759</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -161,6 +169,7 @@
     <MESSAGE value="refactoring variables in the get_datetime_original function" />
     <MESSAGE value="Added the function of getting the date from the EXIF photo of the datetime_original attribute" />
     <MESSAGE value="Fixed the warning in the get_date function &quot;syntaxWarning: invalid escape sequence '\d'&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the warning in the get_date function &quot;syntaxWarning: invalid escape sequence '\d'&quot;" />
+    <MESSAGE value="The get_datetime_original function has been optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="The get_datetime_original function has been optimized" />
   </component>
 </project>
