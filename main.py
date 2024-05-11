@@ -1,7 +1,8 @@
 import click
 import pathlib
-import exif
-
+from PIL import Image
+import re
+from datetime import datetime
 
 @click.command("cli", context_settings={'show_default': True})
 @click.argument('source_directory', required=True)
@@ -11,7 +12,14 @@ import exif
 def image_sort(source_directory, destination_directory, recursive, move):
     images = image_search(source_directory, recursive)
     for file in images:
-        print(f'The file {pathlib.PurePosixPath(file).name} was created in {get_datetime_original(file)}')
+        file_name = pathlib.PurePosixPath(file).name
+        datetime_original = get_datetime_original(file)
+
+        if datetime_original != "n/a":
+            date_str = get_date(datetime_original)
+            print(f'The file {file_name} new path in {date_str}')
+        else:
+            print(f'The file {file_name} new path in n/a')
 
 
 def image_search(source_directory, recursive):
@@ -24,14 +32,19 @@ def image_search(source_directory, recursive):
 
 def get_datetime_original(file):
     datetime_original = 'n/a'
-    try:
-        with open(file, 'rb') as image_file:
-            image = exif.Image(image_file)
-            datetime_original = image.datetime_original
-    except KeyError:
-        pass
-    finally:
-        return datetime_original
+    exif = Image.open(file)._getexif()
+    if exif:
+        try:
+            datetime_original = exif[36867]
+        except KeyError:
+            pass
+    return datetime_original
+
+
+def get_date(datetime_original):
+    match = re.search('\d{4}:\d{2}:\d{2}', datetime_original)
+    date = datetime.strptime(match.group(), '%Y:%m:%d').date()
+    return date
 
 
 if __name__ == '__main__':
