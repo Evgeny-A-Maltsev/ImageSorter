@@ -12,6 +12,7 @@ from datetime import datetime
 @click.option('-r', '--recursive', is_flag=True, default=False, help='Recursively photo search')
 @click.option('-m', '--move', is_flag=True, default=False, help='Move sorted photos')
 def image_sort(source_directory, destination_directory, recursive, move):
+    """ImageSorter is a program for sorting photos based on the date of creation of the photo obtained from EXIF."""
     images = image_search(source_directory, recursive)
 
     count_ok = 0
