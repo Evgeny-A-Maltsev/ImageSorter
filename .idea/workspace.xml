@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="refactoring variables in the get_datetime_original function">
+    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Added the function of getting the date from the EXIF photo of the datetime_original attribute">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -134,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715351686502</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added the function of getting the date from the EXIF photo of the datetime_original attribute">
+      <option name="closed" value="true" />
+      <created>1715426469464</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715426469464</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,6 +151,7 @@
     <MESSAGE value="The image_search function has been added" />
     <MESSAGE value="Added a function to extract the date of creation of a photo" />
     <MESSAGE value="refactoring variables in the get_datetime_original function" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring variables in the get_datetime_original function" />
+    <MESSAGE value="Added the function of getting the date from the EXIF photo of the datetime_original attribute" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the function of getting the date from the EXIF photo of the datetime_original attribute" />
   </component>
 </project>

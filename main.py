@@ -1,7 +1,7 @@
 import click
 import pathlib
+from re import search
 from PIL import Image
-import re
 from datetime import datetime
 
 @click.command("cli", context_settings={'show_default': True})
@@ -42,7 +42,7 @@ def get_datetime_original(file):
 
 
 def get_date(datetime_original):
-    match = re.search('\d{4}:\d{2}:\d{2}', datetime_original)
+    match = search("\\d{4}:\\d{2}:\\d{2}", datetime_original)
     date = datetime.strptime(match.group(), '%Y:%m:%d').date()
     return date
 
