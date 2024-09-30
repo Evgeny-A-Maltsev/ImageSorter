@@ -1,8 +1,8 @@
 import click
 import pathlib
 import shutil
+import exifread
 from re import search
-from PIL import Image
 from datetime import datetime
 
 
@@ -11,6 +11,8 @@ from datetime import datetime
 @click.argument('destination_directory', required=True)
 @click.option('-r', '--recursive', is_flag=True, default=False, help='Recursively photo search')
 @click.option('-m', '--move', is_flag=True, default=False, help='Move sorted photos')
+
+
 def image_sort(source_directory, destination_directory, recursive, move):
     """ImageSorter is a program for sorting photos based on the date of creation of the photo obtained from EXIF."""
     images = image_search(source_directory, recursive)
@@ -46,17 +48,16 @@ def image_search(source_directory, recursive):
 
     return list(images)
 
+def get_datetime_original(file_name):
+    with open(file_name, 'rb') as file:
+        tags = exifread.process_file(file)
 
-def get_datetime_original(file):
-    exif = Image.open(file)._getexif()
-    datetime_original = "n/a"
-
-    if exif:
-        if 36867 in exif:
-            datetime_original = exif[36867]
+        if 'EXIF DateTimeOriginal' in tags:
+            datetime_original = str(tags['EXIF DateTimeOriginal'])
+        else:
+            datetime_original = "n/a"
 
     return datetime_original
-
 
 def get_date(datetime_original):
     return datetime.strptime(search("\\d{4}:\\d{2}:\\d{2}", datetime_original).group(), "%Y:%m:%d").date()
