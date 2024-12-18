@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Refactoring">
+      <change afterPath="$PROJECT_DIR$/my_date.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ImageSorter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ImageSorter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imagesorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/imagesorter.py" afterDir="false" />
     </list>
@@ -25,7 +30,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/Evgeny-A-Maltsev/ImageSorter.git&quot;,
-    &quot;accountId&quot;: &quot;ed9a08ae-49b1-41f9-aabd-ee5100abb3e5&quot;
+    &quot;accountId&quot;: &quot;5b6f49e8-c5b5-4dd8-92e5-b05f020770fc&quot;
   }
 }</component>
   <component name="ProblemsViewState">
@@ -40,16 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.imagesorter.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Users/yevma/Downloads/yandex-code-assist.2024.2.zip",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.imagesorter.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/yevma/Downloads/yandex-code-assist.2024.2.zip&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="-r -m /home/maltsev/Yandex.Disk/Фотокамера /home/maltsev/sort_photo" />
@@ -83,7 +89,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-fb887030ada0-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.21565.199" />
       </set>
     </attachedChunks>
   </component>
