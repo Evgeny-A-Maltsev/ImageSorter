@@ -4,7 +4,7 @@ import my_image
 import my_date
 
 program_version = "0.2.0"
-program_description = "ImageSorter by Evgeny Maltsev (yevmal@gmail.com)"
+program_description = "ImageSorter by Evgeny A. Maltsev (yevmal@gmail.com)"
 
 @click.version_option(program_version, prog_name=program_description)
 @click.command("cli", context_settings={'show_default': True})
