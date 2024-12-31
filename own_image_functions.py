@@ -1,7 +1,7 @@
 import exifread
 
 def get_datetime_original(file_name):
-    """Function for getting the DateTimeOriginal value from EXIF"""
+    """The function for getting the DateTimeOriginal value from EXIF"""
 
     with open(file_name, 'rb') as file:
         tags = exifread.process_file(file)

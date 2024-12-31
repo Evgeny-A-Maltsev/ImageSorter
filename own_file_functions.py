@@ -2,7 +2,7 @@ import pathlib
 import shutil
 
 def file_processing(source_path, destination_path, files_moving):
-    """A function for processing files"""
+    """The function for processing files"""
 
     status = True
 
@@ -23,7 +23,7 @@ def file_processing(source_path, destination_path, files_moving):
     return status
 
 def image_search(source_directory, recursive, image_format):
-    """File search function"""
+    """The function for file search"""
 
     if recursive:
         images = list(pathlib.Path(source_directory).rglob(image_format, case_sensitive=False))
@@ -37,3 +37,12 @@ def get_file_name(path):
 
     return pathlib.PurePosixPath(path).name
 
+def checking_path(path):
+    """The function for checking the path"""
+
+    if pathlib.Path(path).is_dir():
+        status = True
+    else:
+        status = False
+
+    return status
