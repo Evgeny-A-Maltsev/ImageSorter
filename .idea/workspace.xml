@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Refactoring and refinement of the own_file_functions.image_search function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagesorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/imagesorter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/own_date_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/own_date_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/own_file_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/own_file_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/own_image_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/own_image_functions.py" afterDir="false" />
-    </list>
+    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Refactoring and refinement of the own_file_functions.image_search function" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,6 +192,17 @@
     </task>
     <option name="localTasksCounter" value="13" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="A change in the logic of click operation, the selection of arguments and options has been made" />
