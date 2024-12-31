@@ -4,7 +4,7 @@ Usage: imagesorter.py [OPTIONS] SOURCE_DIRECTORY DESTINATION_DIRECTORY
 
   Image sorting function                                                                                                                                                                                                                                                         
   
-Options:
-  -r, --recursive  Recursively photo search
-  -m, --move       Move sorted photos
-  --help           Show this message and exit.    
+Options:<br>
+  -r, --recursive  Recursively photo search<br>
+  -m, --move       Move sorted photos<br>
+  --help           Show this message and exit.<br>
