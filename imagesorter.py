@@ -3,7 +3,7 @@ import own_file_functions as own_file
 import own_image_functions as own_image
 import own_date_functions as own_date
 
-program_description_full = "ImageSorter by Evgeny A. Maltsev (yevmal@gmail.com)"
+program_description = "ImageSorter by Evgeny A. Maltsev (yevmal@gmail.com)"
 program_version = "0.3.0"
 
 @click.command("cli", context_settings={'show_default': True})
@@ -43,5 +43,6 @@ def image_sort(source_directory, destination_directory, recursive, move):
         print("Error: SOURCE_DIRECTORY or DESTINATION_DIRECTORY does not exist")
 
 if __name__ == '__main__':
-    print(f'{program_description_full}\nversion {program_version}\n')
+    print(f'{program_description}\nversion {program_version}\n')
+
     image_sort()
