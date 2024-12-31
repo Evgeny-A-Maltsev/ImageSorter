@@ -2,6 +2,8 @@ import pathlib
 import shutil
 
 def file_processing(source_path, destination_path, files_moving):
+    """A function for processing files"""
+
     status = True
 
     try:
@@ -20,13 +22,18 @@ def file_processing(source_path, destination_path, files_moving):
 
     return status
 
-def image_search(source_directory, recursive):
+def image_search(source_directory, recursive, image_format):
+    """File search function"""
+
     if recursive:
-        images = list(pathlib.Path(source_directory).rglob("*.jpg", case_sensitive=False))
+        images = list(pathlib.Path(source_directory).rglob(image_format, case_sensitive=False))
     else:
-        images = list(pathlib.Path(source_directory).glob("*.jpg", case_sensitive=False))
+        images = list(pathlib.Path(source_directory).glob(image_format, case_sensitive=False))
 
     return list(images)
 
 def get_file_name(path):
+    """The function for getting the file name"""
+
     return pathlib.PurePosixPath(path).name
+
