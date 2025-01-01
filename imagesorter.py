@@ -15,7 +15,7 @@ program_version = "0.3.1"
 @click.option('-r', '--recursive', is_flag=True, default=False, help='Recursively photo search')
 @click.option('-m', '--move', is_flag=True, default=False, help='Move sorted photos')
 def image_sort(source_directory, destination_directory, recursive, move):
-    if (own_file.checking_path(source_directory) and own_file.checking_path(destination_directory)):
+    if own_file.checking_path(source_directory) and own_file.checking_path(destination_directory):
         images: list[Any] = own_file.image_search(source_directory, recursive, "*.jpg")
 
         count_ok: int = 0
