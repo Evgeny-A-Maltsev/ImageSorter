@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Refactoring and refinement of the own_file_functions.image_search function" />
+    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Edit readme">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagesorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/imagesorter.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735646561565</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Edit readme">
+      <option name="closed" value="true" />
+      <created>1735670899139</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735670899139</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +228,7 @@
     <MESSAGE value="All functions have been placed in separate modules, additional refactoring has been performed" />
     <MESSAGE value="The program description has been changed" />
     <MESSAGE value="Refactoring and refinement of the own_file_functions.image_search function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring and refinement of the own_file_functions.image_search function" />
+    <MESSAGE value="Edit readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edit readme" />
   </component>
 </project>
