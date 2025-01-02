@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Fixed main function">
+    <list default="true" id="3547c7df-84e8-4250-800a-8ccad61273da" name="Changes" comment="Refactoring">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735769222520</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Refactoring">
+      <option name="closed" value="true" />
+      <created>1735769445121</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1735769445121</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,9 +260,9 @@
     <MESSAGE value="The program description has been changed" />
     <MESSAGE value="Refactoring and refinement of the own_file_functions.image_search function" />
     <MESSAGE value="Edit readme" />
-    <MESSAGE value="Refactoring" />
     <MESSAGE value="Add gitignore" />
     <MESSAGE value="Fixed main function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed main function" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
 </project>
