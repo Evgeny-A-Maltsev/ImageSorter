@@ -1,6 +1,6 @@
+import click
 from datetime import date
 from typing import Any
-import click
 import own_file_functions as own_file
 import own_image_functions as own_image
 import own_date_functions as own_date
@@ -33,12 +33,12 @@ def image_sort(source_directory, destination_directory, recursive, move):
 
             if own_file.file_processing(str(file_in), str(file_to), move):
                 count_ok += 1
-                print(f"The file {own_file.get_file_name(file_in)} has been processed successfully")
+                print(f"The file {own_file.get_file_name(file_in)} has been sorting")
             else:
                 count_fail += 1
-                print(f"The file {own_file.get_file_name(file_in)} was not processed")
+                print(f"The file {own_file.get_file_name(file_in)} was not sorting")
 
-        print(f"Out of {len(images)} photos, {count_ok} were processed and {count_fail} were skipped.")
+        print(f"Out of {len(images)} photos, {count_ok} were sorting and {count_fail} were skipped.")
     else:
         print("Error: SOURCE_DIRECTORY or DESTINATION_DIRECTORY does not exist")
 
